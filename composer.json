@@ -1,5 +1,5 @@
 {
-    "name": "zfr/zfr-strip-module",
+    "name": "zfr/zfr-stripe-module",
     "type": "library",
     "license": "MIT",
     "description" : "Zend Framework 2 module for using ZfrStripe",
