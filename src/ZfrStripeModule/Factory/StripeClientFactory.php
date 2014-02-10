@@ -37,7 +37,7 @@ class StripeClientFactory implements FactoryInterface
     {
         $config = $serviceLocator->get('Config');
 
-        if (!isset($config['stripe'])) {
+        if (!isset($config['zfr_stripe'])) {
             throw new Exception\RuntimeException(
                 'No config was found for Stripe. Did you copy the `zfr_stripe.local.php` file to your autoload folder?'
             );
