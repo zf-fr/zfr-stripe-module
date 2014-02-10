@@ -39,11 +39,11 @@ class StripeClientFactory implements FactoryInterface
 
         if (!isset($config['stripe'])) {
             throw new Exception\RuntimeException(
-                'No config was found for Stripe. Did you copy the `stripe.local.php` file to your autoload folder?'
+                'No config was found for Stripe. Did you copy the `zfr_stripe.local.php` file to your autoload folder?'
             );
         }
 
-        $config = $config['stripe'];
+        $config = $config['zfr_stripe'];
 
         return new StripeClient(
             $config['secret_key'],

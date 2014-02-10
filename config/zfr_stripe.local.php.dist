@@ -19,7 +19,7 @@
 use ZfrStripe\Client\StripeClient;
 
 return array(
-    'stripe' => array(
+    'zfr_stripe' => array(
         /**
          * Secret key
          */

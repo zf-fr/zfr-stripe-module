@@ -9,11 +9,11 @@ Installation
 To install ZfrStripeModule, use composer:
 
 ```sh
-php composer.phar require zfr/zfr-stripe-module:~1.0
+php composer.phar require zfr/zfr-stripe-module:~2.0
 ```
 
 Enable ZfrStripeModule in your `application.config.php`, then copy the file
-`vendor/zfr/zfr-stripe-module/config/keen_io.local.php.dist` to the
+`vendor/zfr/zfr-stripe-module/config/zfr_stripe.local.php.dist` to the
 `config/autoload` directory of your application (don't forget to remove the
 `.dist` extension from the file name!).
 

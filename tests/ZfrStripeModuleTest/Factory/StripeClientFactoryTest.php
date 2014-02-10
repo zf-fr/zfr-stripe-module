@@ -33,7 +33,7 @@ class StripeClientFactoryTest extends PHPUnit_Framework_TestCase
     public function testCanCreateFromFactory()
     {
         $config = array(
-            'stripe' => array(
+            'zfr_stripe' => array(
                 'secret_key' => '123',
                 'version'    => StripeClient::LATEST_API_VERSION
             )
