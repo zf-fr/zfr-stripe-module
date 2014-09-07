@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "zfr/zfr-stripe": "~1.0",
+        "php": ">=5.4",
+        "zfr/zfr-stripe": "~2.0",
         "zendframework/zend-modulemanager": "~2.0",
         "zendframework/zend-servicemanager": "~2.0"
     },
