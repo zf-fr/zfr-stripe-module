@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0
+
+* [BC] The module now relies on ZfrStripe 3.x
+
 ## 3.0
 
 * [BC] The module now relies on ZfrStripe 2.x

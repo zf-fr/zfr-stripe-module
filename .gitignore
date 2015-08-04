@@ -1,5 +1,6 @@
 ._*
 .~lock.*
+.idea/*
 data/
 vendor/
 composer.lock
