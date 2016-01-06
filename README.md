@@ -9,7 +9,7 @@ Installation
 To install ZfrStripeModule, use composer:
 
 ```sh
-php composer.phar require zfr/zfr-stripe-module:~3.0
+php composer.phar require zfr/zfr-stripe-module:~4.0
 ```
 
 Enable ZfrStripeModule in your `application.config.php`, then copy the file
