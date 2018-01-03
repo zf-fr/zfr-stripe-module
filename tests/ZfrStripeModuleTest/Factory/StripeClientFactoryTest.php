@@ -23,7 +23,7 @@ use Zend\ServiceManager\ServiceManager;
 use ZfrStripe\Client\StripeClient;
 
 /**
- * @author  MichaÃ«l Gallego <mic.gallego@gmail.com>
+ * @author  Michaël Gallego <mic.gallego@gmail.com>
  * @licence MIT
  *
  * @covers \ZfrStripeModule\Factory\StripeClientFactory
@@ -43,9 +43,9 @@ class StripeClientFactoryTest extends PHPUnit_Framework_TestCase
         $serviceManager->setService('Config', $config);
 
         $factory = new StripeClientFactory();
-        $result  = $factory->createService($serviceManager);
+        $result  = $factory($serviceManager, 'ZfrStripe\\Client\\StripeClient');
 
-        $this->assertInstanceOf('ZfrStripe\Client\StripeClient', $result);
+        $this->assertInstanceOf('ZfrStripe\\Client\\StripeClient', $result);
         $this->assertEquals(StripeClient::LATEST_API_VERSION, $result->getApiVersion());
     }
 }

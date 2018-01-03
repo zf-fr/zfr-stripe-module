@@ -18,26 +18,26 @@
 
 namespace ZfrStripeModule\Factory;
 
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Interop\Container\ContainerInterface;
+use Zend\ServiceManager\Factory\FactoryInterface;
 use ZfrStripe\Client\StripeClient;
 
 /**
- * @author MichaÃ«l Gallego <mic.gallego@gmail.com>
+ * @author Michaël Gallego <mic.gallego@gmail.com>
  * @licence MIT
- *
  */
-class StripeClientFactory implements FactoryInterface
+class StripeClientFactory implements
+    FactoryInterface
 {
     /**
      * {@inheritDoc}
      * @return StripeClient
      */
-    public function createService(ServiceLocatorInterface $serviceLocator)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $config = $serviceLocator->get('Config');
+        $config = $container->get('Config');
 
-        if (!isset($config['zfr_stripe'])) {
+        if (! isset($config['zfr_stripe'])) {
             throw new Exception\RuntimeException(
                 'No config was found for Stripe. Did you copy the `zfr_stripe.local.php` file to your autoload folder?'
             );
