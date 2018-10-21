@@ -35,6 +35,11 @@ class Module implements ConfigProviderInterface
 
         return [
             'service_manager' => $configProvider->getDependencies(),
+            'view_helpers' => [
+                'factories' => [
+                    'stripeKey' => \ZfrStripeModule\View\Helper\StripeKeyFactory::class,
+                ],
+            ],
         ];
     }
 }
