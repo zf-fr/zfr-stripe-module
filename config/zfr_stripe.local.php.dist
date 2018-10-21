@@ -24,7 +24,10 @@ return array(
          * Secret key
          */
         // 'secret_key' => '',
-
+        /**
+         * Publishable key
+         */
+        // 'publishable_key' => '',
         /**
          * Stripe SDK version to use
          */
